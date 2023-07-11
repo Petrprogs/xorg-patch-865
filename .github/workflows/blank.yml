@@ -32,7 +32,7 @@ jobs:
           cd xorg-server
           echo "deb-src http://cz.archive.ubuntu.com/ubuntu mantic main" | sudo tee -a /etc/apt/sources.list 
           sudo apt update
-          sudo apt install git
+          sudo apt install libunwind-dev
           sudo apt-get source xorg-server
           sudo apt-get build-dep xorg-server
           sudo apt install build-essential devscripts lintial
