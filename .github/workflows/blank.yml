@@ -42,6 +42,7 @@ jobs:
           sudo patch < freedesktop-bug-865.patch $(ls -d */)xkb/xkbActions.c
           cd $(ls -d */)
           sudo debuild -us -uc
-          
+          cd ..
+          dput ppa:petergiters/ppa $(ls | grep *.changes)
 
 
