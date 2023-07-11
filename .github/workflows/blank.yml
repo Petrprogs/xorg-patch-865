@@ -43,7 +43,6 @@ jobs:
           cd $(ls -d */)
           sudo debuild -us -uc
           cd ..
-          dput ppa:petergiters/ppa $(ls | grep *.changes)
       - name: Automatic Releases
         # You may pin to the exact commit or the version.
         # uses: marvinpinto/action-automatic-releases@919008cf3f741b179569b7a6fb4d8860689ab7f0
