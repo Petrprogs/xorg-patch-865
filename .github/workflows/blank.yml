@@ -35,7 +35,7 @@ jobs:
           sudo apt install libunwind-dev
           sudo apt-get source xorg-server
           sudo apt-get build-dep xorg-server
-          sudo apt install build-essential devscripts lintial
+          sudo apt install build-essential devscripts lintian
           git clone https://aur.archlinux.org/xorg-server-bug865.git
           patch < freedesktop-bug-865.patch $(ls -d */)xkb/xkbActions.c
           cd $(ls -d */)
