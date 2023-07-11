@@ -39,9 +39,9 @@ jobs:
           git clone https://aur.archlinux.org/xorg-server-bug865.git
           cp xorg-server-bug865/freedesktop-bug-865.patch .
           rm -R xorg-server-bug865
-          patch < freedesktop-bug-865.patch $(ls -d */)xkb/xkbActions.c
+          sudo patch < freedesktop-bug-865.patch $(ls -d */)xkb/xkbActions.c
           cd $(ls -d */)
-          debuild -us -uc
+          sudo debuild -us -uc
           
 
 
