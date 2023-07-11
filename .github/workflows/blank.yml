@@ -59,4 +59,4 @@ jobs:
           title: "Xorg build"
           # Assets to upload to the release
           files: |
-            $buildir/*.deb
+            /home/runner/work/action_train/action_train/xorg-server/*.deb
