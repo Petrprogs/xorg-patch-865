@@ -34,7 +34,8 @@ jobs:
         run: |
           mkdir xorg-server
           cd xorg-server
-          echo "deb-src http://cz.archive.ubuntu.com/ubuntu kinetic main" | sudo tee -a /etc/apt/sources.list          sudo apt update
+          echo "deb-src http://cz.archive.ubuntu.com/ubuntu kinetic main" | sudo tee -a /etc/apt/sources.list 
+          sudo apt update
           sudo apt install git
           sudo apt-get source xorg-server
           sudo apt-get build-dep xorg-server
