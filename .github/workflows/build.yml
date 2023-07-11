@@ -54,9 +54,9 @@ jobs:
           # Git tag (for automatic releases)
           automatic_release_tag: "latest"
           # Should this release be marked as a pre-release?
-          prerelease: true
+          prerelease: false
           # Release title (for automatic releases)
           title: "Xorg build"
           # Assets to upload to the release
           files: |
-            /home/runner/work/action_train/action_train/xorg-server/*.deb
+            /home/runner/work/xorg-patch-865/xorg-patch-865/xorg-server/*.deb
